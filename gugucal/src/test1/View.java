@@ -27,7 +27,9 @@ public class View {
 					System.out.println("(수의 범위는 1~999까지입니다.)");
 					while (true) {
 						try {
-							gugu.gugugu(s.nextInt());
+							gugu.setNumber(s.nextInt());
+							System.out.println("입력하신 단 수는 "+gugu.getNumber()+"단 입니다");
+							gugu.gugugu();
 							break;
 						} catch (InputMismatchException e) {
 							s = new Scanner(System.in);
