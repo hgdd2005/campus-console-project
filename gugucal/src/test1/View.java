@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class View {
 	public static void main(String[] args) {
-		
+
 		Scanner s = new Scanner(System.in);
 		Gugu gugu = new Gugu();
 		Calculator calc = new Calculator();
@@ -20,17 +20,28 @@ public class View {
 				if (menu == 0) {
 					System.out.println("프로그램을 종료합니다.");
 					break;
-				} else if(menu == 1) {
+				} else if (menu == 1) {
 					calc.Cal();
-				} else if(menu == 2){
-					gugu.gugugu();
+				} else if (menu == 2) {
+					System.out.println("구하고자 하는 단 수를 입력해 주세요.");
+					System.out.println("(수의 범위는 1~999까지입니다.)");
+					while (true) {
+						try {
+							int gugudan = s.nextInt();
+							gugu.gugugu(gugudan);
+							break;
+						} catch (InputMismatchException e) {
+							s = new Scanner(System.in);
+							System.out.println("잘못된 입력입니다. 다시 입력해 주세요.");
+						}
+					}
 				} else {
 					System.out.println("잘못된 입력입니다. 다시 입력해 주세요.");
 				}
-			} catch(InputMismatchException e){
+			} catch (InputMismatchException e) {
 				s = new Scanner(System.in);
 				System.out.println("잘못된 입력입니다. 다시 입력해 주세요.");
-				
+
 			}
 		}
 	}
