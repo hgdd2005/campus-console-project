@@ -27,8 +27,7 @@ public class View {
 					System.out.println("(수의 범위는 1~999까지입니다.)");
 					while (true) {
 						try {
-							int gugudan = s.nextInt();
-							gugu.gugugu(gugudan);
+							gugu.gugugu(s.nextInt());
 							break;
 						} catch (InputMismatchException e) {
 							s = new Scanner(System.in);
