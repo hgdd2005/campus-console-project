@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Gugu {
 	public static void gugugu() {
-		int a;
-		Scanner sc = new Scanner(System.in);
+		int integer;
+		Scanner s = new Scanner(System.in);
 		while (true) {
 			System.out.println("구하고자하는 단 수를 입력해 주세요.");
 			System.out.println("(수의 범위는 1~999까지입니다.)");
-			a = sc.nextInt();
-			if (a >= 1 && a <= 999) { // 숫자의 범위는 1~999까지
+			integer = s.nextInt();
+			if (integer >= 1 && integer <= 999) { // 숫자의 범위는 1~999까지
 				for (int i = 1; i < 10; i++) {
-					System.out.println("" + a + "x" + i + " = " + a * i);
+					System.out.println("" + integer + "x" + i + " = " + integer * i);
 				}
 				System.out.println("------------------");
 				break;

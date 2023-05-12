@@ -14,13 +14,13 @@ public class View {
 			System.out.println("1 : 계산기");
 			System.out.println("2 : 구구단");
 			System.out.println("0 : 종료");
-			int c = s.nextInt();
-			if (c == 0) {
+			int menu = s.nextInt();
+			if (menu == 0) {
 				System.out.println("프로그램을 종료합니다.");
 				break;
-			} else if(c == 1) {
+			} else if(menu == 1) {
 				calc.Cal();
-			} else if(c == 2){
+			} else if(menu == 2){
 				gugu.gugugu();
 			}
 		}
