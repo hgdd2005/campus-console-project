@@ -13,5 +13,4 @@ public class Gugudan {
         }
     }
 
-// 주석입니다.
 
