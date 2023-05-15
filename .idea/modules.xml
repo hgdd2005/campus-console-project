@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gugudan/Gugudan.iml" filepath="$PROJECT_DIR$/Gugudan/Gugudan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/campus-console-project.iml" filepath="$PROJECT_DIR$/.idea/campus-console-project.iml" />
+    </modules>
+  </component>
+</project>
