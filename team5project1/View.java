@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class View {
 	Scanner scan = new Scanner(System.in);
 	Calcultor calcultor=new Calcultor();
+	Star star=new Star();
 	Gugu gugu=new Gugu();
 	
 	Exit end = new Exit(); // 프로그램 종료 클래스
@@ -12,7 +13,7 @@ public class View {
 	public void Screen() {
 		while (true) {
 			while (true) {// 프로그램 선택을 잘못 할 시 다시 선택하기위한 무한루프
-				System.out.println("어떤 프로그램을 원하십니까?(1번.계산기 2구구단 3.종료)");
+				System.out.println("어떤 프로그램을 원하십니까?(1번.계산기 2구구단 3.별피라미드 4.종료)");
 				String program = scan.next();
 
 				if (program.equals("1")) {//1을 선택시 게산기 프로그램
@@ -30,7 +31,16 @@ public class View {
 					}
 					break;
 				}
-				else if (program.equals("3")) {//3을 선택시 프로드램 종료
+				else if(program.equals("3")) {//3을 선택시 별 피라미드 
+					System.out.println("별 피라미드\n");
+					System.out.println("몇단을 원하십니까?(2단부터)");
+					String floor=scan.next();
+					if( GugudanisInteger(floor)) {
+						star.pyramid(Integer.parseInt(floor));
+					}
+					break;
+				}
+				else if (program.equals("4")) {//3을 선택시 프로드램 종료
 					System.out.println("프로그램 종료");
 					System.exit(0); // 프로그램 종료
 				}
