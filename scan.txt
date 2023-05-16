@@ -1,0 +1,8 @@
+입력 (Scacner)
+
+import java.util.Scanner;  
+
+java.util(자바에 있는 기본 클래스)에 있는 Scanner을 사용한다고 선언 
+
+클래스안에서 
+Scanner 원하는 스캔 이름 =new Scanner
