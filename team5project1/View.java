@@ -25,7 +25,7 @@ public class View {
 					System.out.println("구구단 프로그램\n");
 					System.out.println("원하는 단을 입력하십시오:");
 					String dan=scan.next();
-					if( GugudanisInteger(dan)) {//올바른 입력을 하였는지 점검
+					if( isInteger(dan)) {//올바른 입력을 하였는지 점검
 						gugu.setNumber(Integer.parseInt(dan));//Integer.pasreInt는 String인 dan을 int로 변환하여 입력
 						gugu.gugugu();//구구단 출력
 					}
@@ -35,12 +35,12 @@ public class View {
 					System.out.println("별 피라미드\n");
 					System.out.println("몇단을 원하십니까?(2단부터)");
 					String floor=scan.next();
-					if( GugudanisInteger(floor)) {
+					if( isInteger(floor)) {
 						star.pyramid(Integer.parseInt(floor));
 					}
 					break;
 				}
-				else if (program.equals("4")) {//3을 선택시 프로드램 종료
+				else if (program.equals("4")) {//4을 선택시 프로드램 종료
 					System.out.println("프로그램 종료");
 					System.exit(0); // 프로그램 종료
 				}
@@ -52,7 +52,7 @@ public class View {
 		}
 	}
 	
-	public static boolean GugudanisInteger(String judgment) { // 구구단 할때 정수가 올바른지 신판
+	public static boolean isInteger(String judgment) { //정수가 올바른지 신판
 		try {
 			Integer.parseInt(judgment);
 			return true;
